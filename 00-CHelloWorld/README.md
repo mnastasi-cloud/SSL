@@ -53,7 +53,7 @@ gcc -std=c23 hello.c -o hello
 Salida:
 
 ```text
-Hello, World! - C23
+Hello, World!
 ```
 
 ## Redirección de salida
@@ -71,7 +71,7 @@ cat output.txt
 Contenido:
 
 ```text
-Hello, World! - C23
+Hello, World!
 ```
 
 ## Compilación con make
