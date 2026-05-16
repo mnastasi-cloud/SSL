@@ -6,82 +6,26 @@ Se utilizó GCC (GNU Compiler Collection).
 
 ## Versión del compilador
 
+Para verificar la versión del compilador se ejecutó:
+
 ```bash
-gcc --version
+/c/msys64/ucrt64/bin/gcc.exe --version
 ```
 
-Salida:
+Salida obtenida:
 
 ```text
-gcc.exe (Rev3, Built by MSYS2 project) 14.2.0
+gcc.exe (Rev4, Built by MSYS2 project) 16.1.0
 ```
 
-## Versión de C soportada
+Por lo tanto, la versión del compilador utilizada es GCC 16.1.0.
 
-El compilador soporta el estándar C23 utilizando:
+## Versión del lenguaje C soportada
+
+El programa fue compilado utilizando:
 
 ```bash
--std=c23
+/c/msys64/ucrt64/bin/gcc.exe -std=c2x hello.c -o hello
 ```
 
-También puede utilizarse:
-
-```bash
--std=c2x
-```
-
-## Programa fuente
-
-Archivo:
-
-```text
-hello.c
-```
-
-## Compilación
-
-```bash
-gcc -std=c23 hello.c -o hello
-```
-
-## Ejecución
-
-```bash
-./hello
-```
-
-Salida:
-
-```text
-Hello, World!
-```
-
-## Redirección de salida
-
-```bash
-./hello > output.txt
-```
-
-Verificación:
-
-```bash
-cat output.txt
-```
-
-Contenido:
-
-```text
-Hello, World!
-```
-
-## Compilación con make
-
-```bash
-make
-```
-
-## Ejecución con make
-
-```bash
-make run
-```
+La opción `-std=c2x` corresponde al estándar C23.
